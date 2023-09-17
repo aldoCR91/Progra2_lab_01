@@ -41,5 +41,12 @@ namespace Convertidor
             pantalla.MdiParent = this;
             pantalla.Show();
         }
+
+        private void mnAcercaDe_Click(object sender, EventArgs e)
+        {
+            var pantalla = new frmAcercaDe();
+            pantalla.MdiParent = this;
+            pantalla.Show();
+        }
     }
 }

@@ -30,9 +30,9 @@
         {
             menuStrip1 = new MenuStrip();
             mnCalcularPotencia = new ToolStripMenuItem();
+            mnCambiarColor = new ToolStripMenuItem();
             mnAcercaDe = new ToolStripMenuItem();
             mnSalir = new ToolStripMenuItem();
-            mnCambiarColor = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -52,11 +52,19 @@
             mnCalcularPotencia.Text = "Calcular potencia";
             mnCalcularPotencia.Click += calcularPotenciaToolStripMenuItem_Click;
             // 
+            // mnCambiarColor
+            // 
+            mnCambiarColor.Name = "mnCambiarColor";
+            mnCambiarColor.Size = new Size(94, 20);
+            mnCambiarColor.Text = "Cambiar color";
+            mnCambiarColor.Click += mnCambiarColor_Click;
+            // 
             // mnAcercaDe
             // 
             mnAcercaDe.Name = "mnAcercaDe";
             mnAcercaDe.Size = new Size(71, 20);
             mnAcercaDe.Text = "Acerca de";
+            mnAcercaDe.Click += mnAcercaDe_Click;
             // 
             // mnSalir
             // 
@@ -64,13 +72,6 @@
             mnSalir.Size = new Size(41, 20);
             mnSalir.Text = "Salir";
             mnSalir.Click += mnSalir_Click;
-            // 
-            // mnCambiarColor
-            // 
-            mnCambiarColor.Name = "mnCambiarColor";
-            mnCambiarColor.Size = new Size(94, 20);
-            mnCambiarColor.Text = "Cambiar color";
-            mnCambiarColor.Click += mnCambiarColor_Click;
             // 
             // frmPrincipal
             // 
@@ -82,6 +83,7 @@
             MainMenuStrip = menuStrip1;
             Name = "frmPrincipal";
             Text = "Convertidor";
+            WindowState = FormWindowState.Maximized;
             Load += frmPrincipal_Load;
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();

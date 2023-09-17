@@ -13,7 +13,7 @@ using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Convertidor
 {
-    public partial class frmPotencia : FormularioPersonalizado
+    public partial class frmPotencia : Form
     {
         public frmPotencia()
         {

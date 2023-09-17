@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Convertidor
 {
-    public partial class frmCambiarColor : FormularioPersonalizado
+    public partial class frmCambiarColor : Form
     {
         public frmCambiarColor()
         {
@@ -33,9 +33,15 @@ namespace Convertidor
                 // Obtener el color seleccionado por el usuario
                 Color colorSeleccionado = colorDialog.Color;
 
-                // Establecer el color de fondo del formulario
-                this.BackColor = colorSeleccionado;
-                
+                // Actualiza la configuración del color de fondo.
+                Configuracion.ColorFondo = colorSeleccionado;
+
+                // Aplica el color de fondo a todos los formularios abiertos.
+                foreach (Form form in Application.OpenForms)
+                {
+                    form.BackColor = Configuracion.ColorFondo;
+                }
+
             }
         }
     }

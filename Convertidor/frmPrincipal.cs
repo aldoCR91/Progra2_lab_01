@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace Convertidor
 {
-    public partial class frmPrincipal : FormularioPersonalizado
+    public partial class frmPrincipal : Form
     {
         public frmPrincipal()
         {

@@ -2,7 +2,7 @@
 
 namespace Convertidor
 {
-    partial class frmCambiarColor : FormularioPersonalizado
+    partial class frmCambiarColor : Form
     {
         /// <summary>
         /// Required designer variable.

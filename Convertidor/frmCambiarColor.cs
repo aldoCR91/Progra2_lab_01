@@ -39,6 +39,7 @@ namespace Convertidor
                 // Aplica el color de fondo a todos los formularios abiertos.
                 foreach (Form form in Application.OpenForms)
                 {
+                    // Cambia el color de todos los formularios abiertos 
                     form.BackColor = Configuracion.ColorFondo;
                 }
 

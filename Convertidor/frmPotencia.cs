@@ -31,18 +31,20 @@ namespace Convertidor
 
         private void btnElevar_Click(object sender, EventArgs e)
         {
+            // si el valor no es convertible a int /  si la base es menor que 1 / si la base es mayor que 99
             if (!int.TryParse(tbBase.Text, out int base1) || base1 < 1 || base1 > 99)
             {
                 MessageBox.Show("La base debe ser un numero entero entre 1 y 99");
                 return;
             }
-
+            // si el valor no es convertible a int /  si el exponente es menor que 1 / si la el exponente es mayor que 9
             if (!int.TryParse(tbExponente.Text, out int exponente) || exponente < 0 || exponente > 10)
             {
                 MessageBox.Show("El exponente debe ser un numero entero menor o igual a 10");
                 return;
             }
 
+            // Actualiza el valor del label lblResultado con el resultado del metodo Potencia.Calcular
             lblResultado.Text = Potencia.Calcular(base1, exponente);
 
         }
